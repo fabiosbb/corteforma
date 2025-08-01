@@ -1,0 +1,146 @@
+footer{
+   background-color: #ECEAE4;
+}
+
+header{
+   background-color: #ECEAE4;
+}
+
+
+
+.fonte {
+  font-size: 25px;
+  color: #000;
+}
+
+.fonte_botoes{
+  
+  font-weight: bold;
+}
+
+.orcamentos{
+  padding: 30px!important;
+}
+
+
+
+/* Pagina gerir_home */
+
+
+.alert {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-carrossel-tabela {
+  width: 150px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;      
+  max-height: 100px;     
+}
+
+/* Espaçamento entre radios e botão salvar na tabela */
+
+table tbody form.d-flex button {
+  margin-left: 10px; /* ou 8px, ajuste como preferir */
+}
+
+/* Espaço entre os radios Sim e Não */
+
+table tbody form.d-flex input[type="radio"] {
+  margin-right: 6px;
+}
+
+
+/* fundo branco  / fundo preto no hover */
+
+.btn-preto-invert {
+  background-color: #fff; 
+  color: #000;           
+  border: 1px solid #000; 
+  transition: all 0.3s ease;
+}
+
+.btn-preto-invert:hover,
+.btn-preto-invert:focus {
+  background-color: #000; 
+  color: #fff;            
+  border: 1px solid #000; 
+  text-decoration: none;
+}
+
+/* Pagina gerir_sobre */
+
+
+.form-edicao {
+  min-height: 260px;
+}
+
+.imagem-ajustada {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.rotulo {
+  font-weight: bold;
+  color: #000;
+}
+
+.alert {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* Servicos */
+
+
+.btn-tamanho-fixo {
+  width: 120px; 
+  height: 38px;      
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img-preview {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 200px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.table td, .table th {
+  padding: 1rem !important;
+  vertical-align: middle;
+}
+
+.img-preview {
+  width: 150px;           
+  height: 100px;         
+  object-fit: cover;     
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Gerir Servicos - Imagens */
+
+
+.img-admin-padrao {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}

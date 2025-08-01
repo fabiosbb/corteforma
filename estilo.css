@@ -1,0 +1,357 @@
+@font-face {
+  font-family: 'OswaldLight';
+  src: url('../fontes/Oswald-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OswaldBold';
+  src: url('../fontes/Oswald-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Pagina header */
+
+.fonte_oswald_texto{
+  font-family: 'OswaldLight', sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  align-items: center;
+}
+
+.fonte_oswald_nav{
+  font-family: 'OswaldLight', sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: black;
+}
+
+.tamanho_h{
+  font-family: 'OswaldMedium', sans-serif;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+
+.tamanho_legenda{
+  font-size: 20px;
+  font-family: 'OswaldBold', sans-serif;
+  letter-spacing: 1px;
+}
+
+.cor_fundo{
+  background-color: #ECEAE4;
+}
+
+.botao_orcamento{
+  background-color: #A6C424;
+  border-radius: 6px; 
+}
+
+.logo{
+  width: 300px;
+  height: 90px;
+  border: none;
+}
+
+
+/* Pagina main */
+
+.banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 600px; 
+  margin-bottom: 50px; 
+  object-fit: cover;
+}
+
+.ajuste_banner > img{
+  height: 300px;
+}
+
+ .carousel_button {
+  transition: transform 0.3s;
+  color: #d9d9d9;
+}
+.carousel_button:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.img-uniforme {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.img-uniforme {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.detalhe_amarelo_linha {
+  width: 2px; 
+  height: 60px; 
+  background-color: #ffc107; 
+  margin: 0 auto; 
+  border-radius: 2px; 
+}
+
+#text_decoration {
+  text-decoration: none!important;
+  color: black;
+}
+
+
+@media (max-width: 1210px) {
+  .contactos {
+    flex-direction: column !important;
+    align-items: center;
+    
+  }
+
+  .contactos .col-md-3 {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .posicao {
+    position: relative;
+    right: 50px;
+      
+  }   
+}
+
+@media (max-width: 745px) {
+  .posicao {
+    position: relative;
+    right: 20px;
+  }   
+}
+
+
+/* Pagina main - Contactos */
+
+
+.contactos{
+  background-color: #d9d9d9;
+  font-family: 'OswaldLight', sans-serif;
+}
+
+.img_contactos{
+  width: 628px;
+}
+
+
+/* Pagina main - footer */
+
+
+footer{
+  background-color: #B1C365AD;
+}
+
+.nav_footer > a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.copyright{
+  font-size: 20px;
+}
+
+/* Pagina sobre - main */
+
+/* isso e para inverter os blocos e nao ficar img tex tex img na pagina sobre*/
+
+@media (max-width: 766px) {
+  .small-screen-reverse {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .pb-small {
+    padding-bottom: 20px !important; 
+  }
+}
+
+
+/* Pagina contactos - main */
+
+.estilo_input{
+  border: none;
+  height: 30px;
+}
+
+.botao_enviar{
+  width: 80px;
+  height: 50px;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+
+/* Pagina servicos - main */
+
+.card_servicos{
+  width: 280px;
+  height: 150px;
+  border: 2px solid black;
+  object-fit: cover;
+  border-radius: 4px;
+  
+}
+
+.card_servicos > a{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.card_servicos:hover > a {
+  color: #808080; 
+}
+
+.active-card {
+  background-color: white;
+}
+
+
+.galeria-imagens img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+  border: 1px solid #ccc;
+}
+
+.pagination .page-link {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination .page-item:hover .page-link,
+.pagination .page-item.active .page-link {
+  background-color: #B1C365AD;
+  color: black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Ajuste imagens Portifolio/Serviços */
+
+
+.galeria-imagens .img-container {
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;  /* centralizar */
+}
+
+.galeria-imagens .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+@media screen and (max-width: 760px) {
+
+  .galeria-imagens {
+    display: flex;
+    flex-direction: column !important; 
+    align-items: center; 
+  }
+
+  .galeria-imagens .col-5 {
+    width: 100% !important;
+    max-width: 400px;
+  }
+
+  .galeria-imagens img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+
+  .card_servicos {
+    transform: scale(0.9); 
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .card_servicos {
+    transform: scale(0.8); 
+  }
+
+}
+
+
+/* Responsividade Telemovel */
+
+@media screen and (max-width: 760px) {
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .tamanho_legenda {
+    font-size: 16px; 
+  } 
+
+  .botao_orcamento {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
