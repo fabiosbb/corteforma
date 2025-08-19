@@ -85,9 +85,10 @@ if ($id) {
                 <textarea name="resposta" id="resposta" class="form-control" rows="6" required><?= htmlspecialchars($orcamento['resposta'] ?? '') ?></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Enviar Resposta</button>
+            <button type="submit" class="btn btn-preto-invert fonte_botoes">Enviar Resposta</button>
             
         </form>
+
 
     <?php else: ?>
 

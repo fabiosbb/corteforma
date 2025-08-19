@@ -8,7 +8,7 @@ $contactos = getContactos();
 
 <main>  
 
-    <div class="container-fluid cor_fundo pt-5 pb-5">
+    <div class="container-fluid cor_fundo pt-3 pb-5">
 
         <div class="row ps-5 pe-5 pt-5">
 

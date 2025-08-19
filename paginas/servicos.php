@@ -19,11 +19,11 @@ $total_paginas = $paginacao['paginas'];
 
 ?>
 
-<main class="container-fluid cor_fundo pt-5">
+<main class="container-fluid cor_fundo pt-3">
 
-    <div class="row d-flex gap-4 justify-content-evenly pt-5 pb-5 text-center">
+    <div class="row d-flex justify-content-evenly pt-5 pb-5 text-center">
 
-        <div class="row d-flex gap-4 justify-content-evenly pt-5 pb-5 text-center">
+        <div class="row d-flex justify-content-evenly pt-3 pb-5 text-center">
 
             <?php foreach ($servicos as $s): ?>
 
@@ -40,16 +40,18 @@ $total_paginas = $paginacao['paginas'];
     </div>
 
 
-    <div class="row justify-content-center g-3 pb-5 galeria-imagens">
+    <div class="row justify-content-center  pb-5 galeria-imagens">
 
-        <div class="row justify-content-center g-3 pb-5 galeria-imagens">
+        <div class="row justify-content-center pb-5 galeria-imagens">
 
             <?php foreach ($imagens as $img): ?>
 
-               <div class="col-5 text-center pt-5">
+               <div class="col-md-6 col-12 text-center pt-5">
 
                 <div class="img-container">
-                    <img src="<?= $img['imagem'] ?? 'imagens' ?>" alt="Imagem do serviço">
+                    <img src="<?= $img['imagem'] ?? 'imagens' ?>" alt="Imagem do serviço" class="shadow-sm img-fluid">
+
+
                 </div>
             
                 <p class="tamanho_legenda pt-3"><?= $img['legenda'] ?? 'Legenda' ?></p>

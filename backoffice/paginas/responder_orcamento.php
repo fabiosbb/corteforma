@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'id' => $id
     ]);
 
-    // Se quiseres enviar resposta ao cliente (por email)
     if (!empty($_POST['resposta'])) {
         $resposta = $_POST['resposta'];
         $emailCliente = $orcamento['email'];

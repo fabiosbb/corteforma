@@ -15,7 +15,7 @@ $contactos = getContatoPrincipal();
 
 <main class="container-fluid px-0 banner">
 
-    <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide mb-2" data-bs-ride="carousel">
     
         <div class="carousel-inner">
 
@@ -49,7 +49,7 @@ $contactos = getContatoPrincipal();
 
     <div class="row">
 
-        <div class="col-10  text-center pb-5 mx-auto">
+        <div class="col-10  text-center pb-3 mx-auto">
 
             <h1 class=" "><?= htmlspecialchars($home['titulo']) ?></h1>
 
@@ -58,7 +58,7 @@ $contactos = getContatoPrincipal();
 
     </div>
 
-    <div class="container-fluid cor_fundo ">
+    <div class="container-fluid cor_fundo">
 
         <div class="row">
             
@@ -74,15 +74,15 @@ $contactos = getContatoPrincipal();
 
     </div>
 
-    <div class="row cor_fundo pb-5 justify-content-center g-5">
+    <div class="row cor_fundo  justify-content-center g-5">
 
         <?php foreach ($portfolio as $p): ?>
 
-            <div class="col-12 col-md-3 col-sm-12 text-center pb-5">
+            <div class="col-12 col-md-3 col-sm-12 text-center ">
 
                 <a href="portfolio.php?id=<?= $p['id'] ?>" id="text_decoration"">
 
-                    <img src="<?= htmlspecialchars($p['imagem']) ?>" alt="<?= htmlspecialchars($p['titulo']) ?>" class="img-fluid img-uniforme"/>
+                    <img src="<?= htmlspecialchars($p['imagem']) ?>" alt="<?= htmlspecialchars($p['titulo']) ?>" class="img-fluid img-uniforme "/>
 
 
                     <p class="tamanho_legenda pt-2 pb-5"><?= htmlspecialchars($p['titulo']) ?></p>
@@ -103,15 +103,15 @@ $contactos = getContatoPrincipal();
                 <div class="detalhe_amarelo_linha"></div>
             </div>
 
-            <div class="col-12 text-center pb-5">
-                <h2 class="tamanho_h">Serviços</h2>
+            <div class="col-12 text-center pb-5 fonte_oswald">
+                <h2 class="px-0 tamanho_h">Serviços</h2>
             </div>
 
         </div>
 
     </div>
 
-    <div class="row cor_fundo pb-5 justify-content-center g-5  px-0">
+    <div class="row cor_fundo pb-5 justify-content-center g-5">
 
         <?php foreach ($servicos as $s): ?>
 
@@ -131,51 +131,51 @@ $contactos = getContatoPrincipal();
 
     </div>    
 
-   <div class="row cor_fundo justify-content-center pt-5 pb-5 contactos gap-5">
+    <div class="row cor_fundo justify-content-center pt-5 pb-5 contactos gap-5">
 
-    <?php if (is_array($contactos) && !empty($contactos)): ?>
+        <?php if (is_array($contactos) && !empty($contactos)): ?>
 
-        <div class="col-12 col-md-3 text-center px-0 pt-5 pb-5">
-            <img src="<?= htmlspecialchars($contactos['imagem']) ?>" alt="Imagem de Contactos" class="img_contactos img-fluid img_produtos" />
-        </div>
+            <div class="col-12 col-md-3 text-center px-0 pt-5 pb-5 text-center">
+                <img src="<?= htmlspecialchars($contactos['imagem']) ?>" alt="Imagem de Contactos" class="img_contactos img-fluid img_produtos galeria-imagens"/>
+            </div>
 
-        <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center px-0 ms-md-5 ps-md-5 posicao">
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center px-0 ms-md-5 ps-md-5 posicao">
 
-            <h2 class="pb-4 ">Contactos</h2>
+                <h2 class="pb-4 tamanho_h">Contactos</h2>
 
-            <div class="d-flex flex-column gap-3 ps-5 tamanho_legenda">
+                <div class="d-flex flex-column gap-3 ps-5 tamanho_legenda">
 
-                <div class="d-flex align-items-center gap-3">
-                    <i class="fas fa-phone fa-2x"></i>
-                    <span class="texto-contacto"><?= htmlspecialchars($contactos['telefone']) ?></span>
-                </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fas fa-phone fa-2x"></i>
+                        <span class="texto-contacto"><?= htmlspecialchars($contactos['telefone']) ?></span>
+                    </div>
 
-                <div class="d-flex align-items-center gap-3">
-                    <i class="fas fa-envelope fa-2x"></i>
-                    <span class="texto-contacto"><?= htmlspecialchars($contactos['email']) ?></span>
-                </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <span class="texto-contacto"><?= htmlspecialchars($contactos['email']) ?></span>
+                    </div>
 
-                <div class="d-flex align-items-center gap-3">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                    <span class="texto-contacto"><?= htmlspecialchars($contactos['linkedin']) ?></span>
-                </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                        <span class="texto-contacto"><?= htmlspecialchars($contactos['linkedin']) ?></span>
+                    </div>
 
-                <div class="d-flex align-items-center gap-3">
-                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                    <span class="texto-contacto"><?= htmlspecialchars($contactos['morada']) ?></span>
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <span class="texto-contacto"><?= htmlspecialchars($contactos['morada']) ?></span>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        <?php else: ?>
 
-    <?php else: ?>
+            <p class="text-center">Informação de contactos não disponível no momento.</p>
 
-        <p class="text-center">Informação de contactos não disponível no momento.</p>
+        <?php endif; ?>
 
-    <?php endif; ?>
-
-</div>
+    </div>
 
 
 </main>

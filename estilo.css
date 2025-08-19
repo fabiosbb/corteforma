@@ -127,35 +127,6 @@ body, html {
 }
 
 
-@media (max-width: 1210px) {
-  .contactos {
-    flex-direction: column !important;
-    align-items: center;
-    
-  }
-
-  .contactos .col-md-3 {
-    width: 100%;
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 1210px) {
-  .posicao {
-    position: relative;
-    right: 50px;
-      
-  }   
-}
-
-@media (max-width: 745px) {
-  .posicao {
-    position: relative;
-    right: 20px;
-  }   
-}
-
-
 /* Pagina main - Contactos */
 
 
@@ -190,6 +161,7 @@ footer{
 
 /* isso e para inverter os blocos e nao ficar img tex tex img na pagina sobre*/
 
+
 @media (max-width: 766px) {
   .small-screen-reverse {
     display: flex !important;
@@ -202,7 +174,6 @@ footer{
     padding-bottom: 20px !important; 
   }
 }
-
 
 /* Pagina contactos - main */
 
@@ -217,7 +188,6 @@ footer{
   border: none;
   background-color: #d9d9d9;
 }
-
 
 /* Pagina servicos - main */
 
@@ -244,7 +214,6 @@ footer{
 .active-card {
   background-color: white;
 }
-
 
 .galeria-imagens img {
   width: 100%;
@@ -275,6 +244,15 @@ footer{
 
 /* Ajuste imagens Portifolio/Serviços */
 
+.img-container {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+
 
 .galeria-imagens .img-container {
   width: 550px;
@@ -282,7 +260,7 @@ footer{
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin: 0 auto;  /* centralizar */
+  margin: 0 auto; 
 }
 
 .galeria-imagens .img-container img {
@@ -294,64 +272,212 @@ footer{
 }
 
 
-@media screen and (max-width: 760px) {
+
+
+/* Responsividade */
+
+
+@media (max-width: 1199px) {
+  .galeria-imagens .img-container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .galeria-imagens .img-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .galeria-imagens .img-container {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 930px) {
+  .card_servicos {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 868px) {
+  .tamanho_legenda {
+    margin-top: 1rem; /* ou 16px */
+  }
+}
+
+@media (max-width: 400px) {
+  .tamanho_imagem {
+    width: 85% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+@media (max-width: 1210px) {
+
+
+
+  .fonte_oswald_texto {
+    font-size: 17px;
+  }
+
+  .fonte_oswald_nav {
+    font-size: 16px;
+  }
+
+  .tamanho_h {
+    font-size: 32px;
+  }
+
+  .tamanho_legenda {
+    font-size: 20px;
+  }
+
+ 
+  .logo {
+    width: 250px;
+    height: 75px;
+  }
+
+  .carousel-img {
+    height: 400px;
+  }
+
+  .img-uniforme {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  .contactos {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .contactos .col-md-3 {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .posicao {
+    position: relative;
+    right: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .posicao {
+    position: relative;
+    right: 20px;
+  }   
 
   .galeria-imagens {
-    display: flex;
-    flex-direction: column !important; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .galeria-imagens .col-5 {
-    width: 100% !important;
+    width: 100%;
     max-width: 400px;
   }
 
   .galeria-imagens img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
   }
-}
-
-@media screen and (max-width: 1250px) {
 
   .card_servicos {
-    transform: scale(0.9); 
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-
-  .card_servicos {
-    transform: scale(0.8); 
+    transform: scale(0.8);
   }
 
-}
-
-
-/* Responsividade Telemovel */
-
-@media screen and (max-width: 760px) {
-
-  h1 {
+  .fonte_oswald_texto {
     font-size: 16px;
   }
 
-  h2 {
-    font-size: 16px;
+  .fonte_oswald_nav {
+    font-size: 15px;
   }
 
-  h3 {
-    font-size: 16px;
+  .tamanho_h {
+    font-size: 30px;
   }
 
   .tamanho_legenda {
-    font-size: 16px; 
-  } 
+    font-size: 19px;
+  }
 
-  .botao_orcamento {
+  .logo {
+    width: 220px;
+    height: 65px;
+  }
+
+  .carousel-img {
+    height: 350px;
+  }
+
+  .img-uniforme {
+    width: 280px;
+    height: 280px;
+  }
+
+  .img_contactos {
+    max-width: 420px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .texto-contacto {
     font-size: 14px;
-    padding: 8px 12px;
+    word-break: break-word;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .fonte_oswald_texto {
+    font-size: 15px;
+  }
+
+  .fonte_oswald_nav {
+    font-size: 14px;
+  }
+
+  .tamanho_h {
+    font-size: 26px;
+  }
+
+  .tamanho_legenda {
+    font-size: 17px;
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 55px;
+  }
+
+  .carousel-img {
+    height: 280px;
+  }
+
+  .img-uniforme {
+    width: 240px;
+    height: 240px;
+  }
+
+  .img_contactos {
+    max-width: 320px;
   }
 }
