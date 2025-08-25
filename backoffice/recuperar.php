@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <form method="POST">
           <div class="mb-3">
-            <label for="email" class="form-label fonte_botoes pt-5 pb-2">Seu Email</label>
+            <label for="email" class="form-label fonte_botoes pt-5 pb-2">Email:</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
           </div>
 

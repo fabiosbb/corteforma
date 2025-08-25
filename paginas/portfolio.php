@@ -31,16 +31,23 @@ $total_paginas = $paginacao['paginas'];
 
     </div>
 
- <div class="row justify-content-center galeria-imagens ">
-  <?php foreach ($imagens as $img): ?>
-    <div class="col-lg-6 col-12 text-center pt-md-2 pb-md-2">
-      <div class="img-container mt-5 mb-md-3 mb-lg-4 tamanho_imagem">
-        <img src="<?= $img['imagem'] ?? 'imagens' ?>" alt="Imagem do portfolio" class="shadow-sm img-fluid ">
-      </div>
-      <p class="tamanho_legenda mb-2 mb-md-3 mb-lg-4"><?= $img['legenda'] ?? 'Legenda' ?></p>
+    <div class="row justify-content-center galeria-imagens">
+
+        <?php foreach ($imagens as $img): ?>
+
+            <div class="col-lg-6 col-12 text-center pt-md-2 pb-md-2">
+
+                <div class="img-container mt-5 mb-md-3 mb-lg-4 tamanho_imagem">
+                    <img src="<?= $img['imagem'] ?? 'imagens' ?>" alt="Imagem do portfolio" class="shadow-sm img-fluid ">
+                </div>
+
+                <p class="tamanho_legenda mb-2 mb-md-3 mb-lg-4"><?= $img['legenda'] ?? 'Legenda' ?></p>
+
+            </div>
+
+        <?php endforeach; ?>
+
     </div>
-  <?php endforeach; ?>
-</div>
 
 
 

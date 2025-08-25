@@ -1,6 +1,25 @@
-footer{
-   background-color: #ECEAE4;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+
+footer {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: #ECEAE4;
+}
+
+
+main {
+  min-height: 500px; /* ou ajusta conforme necessário */
+}
+
 
 header{
    background-color: #ECEAE4;

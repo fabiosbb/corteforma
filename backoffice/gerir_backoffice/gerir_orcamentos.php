@@ -60,7 +60,7 @@ if ($id) {
 
 <main class="container py-5">
 
-    <h2 class="mb-4 text-center">Gestão de Orçamentos</h2>
+    <h2 class="mb-4 text-center pb-5">Gestão de Orçamentos</h2>
 
     <?php if ($mensagemErro): ?>
         <div class="alert alert-danger"><?= htmlspecialchars($mensagemErro) ?></div>

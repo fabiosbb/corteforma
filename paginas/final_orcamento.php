@@ -25,7 +25,7 @@ $contactos = getContactos();
         </p>
 
         <div class="pt-3 mt-5">
-          <button class="botao_orcamento p-3 fonte_oswald_nav">Voltar ao Início</button>
+          <a href="index.php"><button class="botao_orcamento p-3 fonte_oswald_nav">Voltar ao Início</button></a>
         </div>
 
       </div>
